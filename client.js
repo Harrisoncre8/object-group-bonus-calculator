@@ -43,7 +43,30 @@ const employees = [
 console.log( employees );
 
 
-// function to calculate bonus
-function calculateBonus (){
-  
+// Master Function - calculates & changes object
+function employeeSalary(){
+  // run calculate bonus function
+  // return employee object with new properties
 }// end function
+
+
+// Bonus calculation function
+function calculateBonus(person){
+// if a rating of a 2 or below - does not receive a bonus
+if ( employees.annualSalary <= 2 ){
+  return 'no bonus';
+} // end rating of <= 2 statement
+// a rating of a 3 - receive a base bonus of 4% of their base annual income
+if ( employees.annualSalary === 3 ){
+{ employees.annualSalary * .04 } + employees.annualSalary;
+} // end 3 rating add 4% to salary
+// a rating of a 4 should receive a base bonus of 6% of their base annual income
+if (  )
+// a rating of a 5 should receive a base bonus of 10% of their base annual income
+  
+// if index of employee number is === 5 , and receive an additional 5%
+//  && if their annual income is greater than $65,000, they should have their bonus adjusted down 1%
+
+// No bonus can be above 13% or below 0% total
+}// end bonus calculation function
+
