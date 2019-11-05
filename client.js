@@ -41,3 +41,9 @@ const employees = [
 // Ask questions when you don't.
 
 console.log( employees );
+
+
+// function to calculate bonus
+function calculateBonus (){
+  
+}// end function
