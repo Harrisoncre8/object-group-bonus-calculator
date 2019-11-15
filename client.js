@@ -63,14 +63,23 @@ console.log( createNewEmployees( employees[0] ) );
 
 function calculateBonus(employee) {
   let bounusPercentage = 0;
-  if (employee.reviewRating <= 2){
-     bounusPercentage = 0;
-} else if (employee.reviewRating = 3){
+if (employee.reviewRating = 3){
      bounusPercentage = .04;
 } else if (employee.reviewRating = 4){
    bounusPercentage = .06;
 } else if (employee.reviewRating = 5){
    bounusPercentage = .10;
+}
+if (employee.employeeNumber.length === 4){
+  bounusPercentage += .05;
+}
+if (employee.annualSalary > 65000){
+  bounusPercentage -= .01;
+}
+if (bounusPercentage > .13) {
+  bounusPercentage = .13;
+} else if (bounusPercentage < 0){
+  bounusPercentage = 0;
 }
 return bounusPercentage;
 }// end calculateBonus
